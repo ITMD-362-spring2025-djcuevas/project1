@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up </title>
+  <title>ModelHub Sign Up</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Sign Up</h1>
+    <h1> Maison Divine </h1>
+    <p>JJoin ModelHub today and step into a world where your modeling dreams can become a reality. 
+        Our platform is dedicated to helping aspiring and professional models showcase their portfolios, connect with top industry professionals, and access exclusive modeling opportunities. 
+        Whether you're just starting your modeling journey or looking to take your career to new heights, ModelHub is the perfect place to make your mark. 
+        Sign up now to join a vibrant community of models and unlock your potential with ModelHub.
+    </p>
     <form id="sign-up-form">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -17,13 +22,10 @@
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
       
-      <label for="signup">Sign Up for:</label>
-      <select id="signup" name="signup">
-        <option value="newsletter">Newsletter</option>
-        <option value="beta">Beta Test</option>
-      </select>
+      <label for="portfolio">Portfolio URL:</label>
+      <input type="url" id="portfolio" name="portfolio" required>
       
-      <button type="submit">Join</button>
+      <button type="submit">Join Now</button>
     </form>
   </div>
   <script src="script.js" async></script>
