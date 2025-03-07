@@ -66,7 +66,8 @@
   .information-section, 
   .measurements-section, 
   .location-section, 
-  .portfolio-section {
+  .portfolio-section,
+  .city-selection {
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 8px;
@@ -99,28 +100,35 @@
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
   }
 
-  .division-section {
+  .division-section,
+  .city-selection {
     display: flex;
-    flex-direction: column; /* Keeps label & radio buttons stacked */
-    align-items: flex-start; /* Aligns everything to the left */
+    flex-direction: column; 
+    align-items: flex-start; 
   }
   
   .division-section div {
     display: flex;
     align-items: center;
-    gap: 8px; /* Adds space between radio button and text */
-    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    gap: 8px; 
+    white-space: nowrap; 
+  }
+
+  .city-selection div {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    white-space: nowrap; 
   }
   
   
   
   /* Radio Button */
   input[type="radio"] {
-    margin: 0; /* Removes unwanted margin */
+    margin: 0; 
   }
 
   
-  /* Small text */
   small {
     font-size: 0.8rem;
     color: #777;
