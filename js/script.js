@@ -2,13 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("sign-up-form");
     const birthdateInput = document.getElementById("birthdate");
   
-    // Create and style the error message
     const errorMessage = document.createElement("p");
     errorMessage.style.color = "red";
     errorMessage.style.fontWeight = "bold";
     birthdateInput.insertAdjacentElement("afterend", errorMessage);
   
-    // Create a modal for the success message
     const modal = document.createElement("div");
     modal.id = "success-modal";
     modal.style.position = "fixed";
@@ -21,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.style.display = "none";
     modal.style.textAlign = "center";
   
-    // Add modal content
+
     modal.innerHTML = `
       <h2>Success!</h2>
       <p>You have successfully signed up!</p>
@@ -29,14 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     document.body.appendChild(modal);
   
-    // Attach event listener for the modal close button AFTER it's created
     modal.addEventListener("click", function (event) {
       if (event.target.id === "close-modal") {
         modal.style.display = "none";
       }
     });
   
-    // Form submission event
     form.addEventListener("submit", function (event) {
       const dobValue = new Date(birthdateInput.value);
       const today = new Date();
@@ -44,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const monthDiff = today.getMonth() - dobValue.getMonth();
       const dayDiff = today.getDate() - dobValue.getDate();
   
-      // Adjust age if the birthday hasn't occurred this year
       if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
         age--;
       }
@@ -52,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // Check if the user is under 18
       if (age < 18) {
         errorMessage.textContent = "You must be at least 18 years old to sign up.";
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault(); 
       } else {
-        errorMessage.textContent = ""; // Clear the error message
-        event.preventDefault(); // Stop actual submission for demo purposes
+        errorMessage.textContent = ""; 
+        event.preventDefault(); 
   
         // Show confirmation modal
         modal.style.display = "block";
