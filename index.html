@@ -1,153 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project1</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">   
-  <script src="js/script.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">   
+    <script src="js/script.js" async></script> <!-- Added async to script tag -->
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="modern-title">Maison Divine</h1>
+      <p>Join today and step into a world where your modeling dreams can become a reality.
+        Our platform is dedicated to helping aspiring and professional models showcase their portfolios, connect with top industry professionals, and access exclusive modeling opportunities.
+        Whether you're just starting your modeling journey or looking to take your career to new heights, ModelHub is the perfect place to make your mark.
+        Sign up now to join a vibrant community of models and unlock your potential with ModelHub.
+      </p>
 
-
-</head>
-<body>
-  <div class="container">
-    <h1 class="modern-title">Maison Divine</h1>
-    <p>Join today and step into a world where your modeling dreams can become a reality.
-      Our platform is dedicated to helping aspiring and professional models showcase their portfolios, connect with top industry professionals, and access exclusive modeling opportunities.
-      Whether you're just starting your modeling journey or looking to take your career to new heights, ModelHub is the perfect place to make your mark.
-      Sign up now to join a vibrant community of models and unlock your potential with ModelHub.
-      
-    </p>
-    
-    <form id="sign-up-form" method="get" action="#null" autocomplete="on">
-
+      <form id="sign-up-form" method="get" action="#null" autocomplete="on"> <!-- Ensured form uses method and action attributes -->
         <div class="division-section">
-            <h3>Division</h3>
-            <div>
-              <input type="radio" id="female" name="division" value="female" required>
-              <label for="female">Female</label>
-            </div>
-            <div>
-              <input type="radio" id="non-binary" name="division" value="non-binary">
-              <label for="non-binary">Non-Binary</label>
-            </div>
-            <div>
-              <input type="radio" id="others" name="division" value="others">
-              <label for="others">Others</label>
-            </div>
+          <h3>Division</h3>
+          <div>
+            <input type="radio" id="female" name="division" value="female" required>
+            <label for="female">Female</label>
           </div>
-          
-      <div class="city-selection">
-            <h3>Choose a Location</h3>
-            <div>
-              <input type="radio" id="paris-location" name="paris-selection">
-              <label for="paris-location">Paris</label>
-            </div>
+          <div>
+            <input type="radio" id="non-binary" name="division" value="non-binary">
+            <label for="non-binary">Non-Binary</label>
+          </div>
+          <div>
+            <input type="radio" id="others" name="division" value="others">
+            <label for="others">Others</label>
+          </div>
+        </div>
 
-            <div>
-              <input type="radio" id="chicago-selection" name="chicago-selection">
-              <label for="chicago-selection">Chicago</label>
-            </div>
+        <div class="city-selection">
+          <h3>Choose a Location</h3>
+          <div>
+            <input type="radio" id="paris-location" name="paris-selection">
+            <label for="paris-location">Paris</label>
+          </div>
+          <div>
+            <input type="radio" id="chicago-selection" name="chicago-selection">
+            <label for="chicago-selection">Chicago</label>
+          </div>
+          <div>
+            <input type="radio" id="la-selection" name="la-selection">
+            <label for="la-selection">Los Angeles</label>
+          </div>
+          <div>
+            <input type="radio" id="milan-selection" name="milan-selection">
+            <label for="milan-selection">Milan</label>
+          </div>
+          <div>
+            <input type="radio" id="nyc-selection" name="nyc-selection">
+            <label for="nyc-selection">New York City</label>
+          </div>
+        </div>
 
-            <div>
-              <input type="radio" id="la-selection" name="la-selection">
-              <label for="la-selection">Los Angeles</label>
-            </div>
+        <div class="signup-section">
+          <h3>Sign Up as:</h3>
+          <select id="signup" name="signup">
+            <option value="model">Commercial</option>
+            <option value="photographer">Fashion</option>
+            <option value="agency">Fitness + Sports</option>
+          </select>
+        </div>
 
-            <div>
-              <input type="radio" id="milan-selection" name="milan-selection">
-              <label for="milan-selection">Milan</label>
-            </div>
+        <div class="information-section">
+          <h3>Information</h3>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required>
 
-            <div>
-              <input type="radio" id="nyc-selection" name="nyc-selection">
-              <label for="nyc-selection">New York City</label>
-            </div>
-        
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required>
 
-      </div>
-          
+          <label for="birthdate">Birthdate:</label>
+          <input type="date" id="birthdate" name="birthdate" required>
 
-      <div class="signup-section">
-        <h3>Sign Up as:</h3>
-        <select id="signup" name="signup">
-          <option value="model">Commercial</option>
-          <option value="photographer">Fashion</option>
-          <option value="agency">Fitness + Sports</option>
-        </select>
-      </div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-      <div class="information-section">
-        <h3>Information</h3>
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required>
-  
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" required>
-  
-        <label for="birthdate">Birthdate:</label>
-        <input type="date" id="birthdate" name="birthdate" required>
-  
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
+        <div class="measurements-section">
+          <h3>Please enter your measurements below</h3>
+          <label for="height">Height:</label>
+          <input type="text" id="height" name="height" required>
 
-      <div class="measurements-section">
-        <h3>Please enter your measurements below</h3>
-        <label for="height">Height:</label>
-        <input type="text" id="height" name="height" required>
-  
-        <label for="bust">Bust:</label>
-        <input type="text" id="bust" name="bust" required>
-  
-        <label for="cup">Cup:</label>
-        <input type="text" id="cup" name="cup" required>
-  
-        <label for="waist">Waist:</label>
-        <input type="text" id="waist" name="waist" required>
-  
-        <label for="hips">Hips:</label>
-        <input type="text" id="hips" name="hips" required>
-  
-        <label for="dress">Dress:</label>
-        <input type="text" id="dress" name="dress" required>
-  
-        <label for="hair-color">Hair Color:</label>
-        <input type="text" id="hair-color" name="hair-color" required>
-  
-        <label for="eye-color">Eye Color:</label>
-        <input type="text" id="eye-color" name="eye-color" required>
-  
-        <label for="shoe-size">Shoe Size:</label>
-        <input type="number" id="shoe-size" name="shoe-size" required>
-  
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-        <small>Format: 123-456-7890</small>
-      </div>
+          <label for="bust">Bust:</label>
+          <input type="text" id="bust" name="bust" required>
 
-      <div class="location-section">
-        <h3>Where do you live?</h3>
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" required>
-  
-        <label for="state">State:</label>
-        <input type="text" id="state" name="state" required>
-  
-        <label for="zip-code">Zip Code:</label>
-        <input type="number" id="zip-code" name="zip-code" required>
-      </div>
-      
-      <div class="portfolio-section">
-        <h3>Submit your Portfolio</h3>
-        <label for="portfolio">Portfolio URL:</label>
-        <input type="url" id="portfolio" name="portfolio" required>
-      </div>
-      
-      <button type="submit">Join Now</button>
-    </form>
-  </div>
-  <script src="script.js" async></script>
-</body>
+          <label for="cup">Cup:</label>
+          <input type="text" id="cup" name="cup" required>
+
+          <label for="waist">Waist:</label>
+          <input type="text" id="waist" name="waist" required>
+
+          <label for="hips">Hips:</label>
+          <input type="text" id="hips" name="hips" required>
+
+          <label for="dress">Dress:</label>
+          <input type="text" id="dress" name="dress" required>
+
+          <label for="hair-color">Hair Color:</label>
+          <input type="text" id="hair-color" name="hair-color" required>
+
+          <label for="eye-color">Eye Color:</label>
+          <input type="text" id="eye-color" name="eye-color" required>
+
+          <label for="shoe-size">Shoe Size:</label>
+          <input type="number" id="shoe-size" name="shoe-size" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <small>Format: 123-456-7890</small>
+        </div>
+
+        <div class="location-section">
+          <h3>Where do you live?</h3>
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required>
+
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required>
+
+          <label for="zip-code">Zip Code:</label>
+          <input type="number" id="zip-code" name="zip-code" required>
+        </div>
+
+        <div class="portfolio-section">
+          <h3>Submit your Portfolio</h3>
+          <label for="portfolio">Portfolio URL:</label>
+          <input type="url" id="portfolio" name="portfolio" required>
+        </div>
+
+        <button type="submit">Join Now</button>
+      </form>
+    </div>
+
+    <script src="script.js" async></script> <!-- Added async to script tag -->
+  </body>
 </html>
